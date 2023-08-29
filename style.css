@@ -158,7 +158,6 @@ nav .navBtnDiv i{
 /* Offers section */
 #offers{
     padding: 18vh 0;
-    border: 1px solid red;
 }
 #offers .heads h1 {
     text-align: center;
@@ -386,13 +385,6 @@ nav .navBtnDiv i{
     #home .rhs h1 span{
         display: none;
     }
-    /* #home .rhs{
-        border: 1px solid white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    } */
     #home .rhs h1{
         font-size: 45px;
         text-align: center;
@@ -467,6 +459,13 @@ nav .navBtnDiv i{
         width: 250px;
         padding: 10px;
         margin: 10px 5px;
+    }
+    #offers .heads h1 {
+       font-size: 28px;
+
+    }
+    #g1 .rhs h1{
+        font-size: 28px;
     }
   
 }
