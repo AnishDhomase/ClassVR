@@ -30,6 +30,9 @@ img#theme{
 section{
     padding: 0 9vw;
 }
+section.secWithHeight{
+    height: 100vh;
+}
 
 
 
@@ -69,12 +72,12 @@ nav .navBtnDiv i{
 }
 #home .lhs img.mainImg{
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 #home .lhs img.subImg{
     position: absolute;
     width: 20%;
-    opacity: 0.6;
+    opacity: 0.8;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -92,6 +95,12 @@ nav .navBtnDiv i{
 #home .lhs img.subImg#rocket{
     bottom: 5%;
     right: 20%;
+}
+#home .lhs img.subImg#comet{
+    bottom: 5%;
+    left: 0%;
+    animation-name: float2;
+    
 }
 
 
@@ -144,6 +153,78 @@ nav .navBtnDiv i{
     color: rgb(47, 46, 46);
 }
 
+
+
+/* Offers section */
+#offers{
+    padding: 18vh 0;
+    border: 1px solid red;
+}
+#offers .heads h1 {
+    text-align: center;
+   font-size: 40px;
+   font-weight: 700;
+}
+#offers .heads h3 {
+    margin-top: 10px;
+    text-align: center;
+   font-size: 18px;
+   font-weight: 100;
+   color: rgb(193, 188, 188);
+
+}
+#offers .heads h1 span{
+    text-align: start;
+    vertical-align: middle;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    border: 3px solid rgb(187, 184, 184);
+    background-color: rgb(109, 107, 105);
+    border-radius: 40px;
+    position: relative;
+    padding: 15px;
+}
+#offers .heads h1 span img{
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}
+#offers .cardSec{
+    padding: 7vh 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+#offers .cardSec .card{ 
+    width: 200px;
+    border: 1px solid rgb(143, 141, 141);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px 15px;
+}
+#offers .cardSec .card:hover{ 
+    box-shadow: 5px 5px 10px 2px rgb(240, 240, 240,0.3), -5px -5px 10px 2px rgb(240, 240, 240,0.3);
+}
+#offers .cardSec .card h2{ 
+    font-size: 19px;
+    font-weight: 900;
+    justify-content: center;
+    margin-top: 8px;
+}
+#offers .cardSec .card h4{ 
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(193, 188, 188);
+}
+#offers .cardSec .card img{ 
+    width: 100%;
+    border-radius: 10px;
+}
+
+
 /* animations */
 @keyframes float1{
     0%{
@@ -171,6 +252,15 @@ nav .navBtnDiv i{
         display: inline-block;
         height: 50px;
         width: 80px;
+    }
+    #offers{
+        padding: 18vh 0;
+        height: auto;
+    }
+    #offers .cardSec .card{ 
+        width: 200px;
+        padding: 10px;
+        margin: 10px 5px;
     }
 }
 @media screen and (max-width:870px){
@@ -253,7 +343,12 @@ nav .navBtnDiv i{
         display: flex;
         justify-content: center;
     }
+    #offers .cardSec .card{ 
+        width: 280px;
+    }
+  
 }
+
 @media screen and (max-width:650px){
     #home .lhs{
        width: 70%;
@@ -263,11 +358,11 @@ nav .navBtnDiv i{
 }
 @media screen and (max-width:450px){
     #home .rhs h1{
-        font-size: 42px;
+        font-size: 35px;
         font-weight: 700;
     }
     #home .lhs{
-       margin-top:20px ;
+       margin-top:1px ;
        width: 80%;
     }
     section{
@@ -279,6 +374,15 @@ nav .navBtnDiv i{
     #home .rhs h3{
         margin-top: 7px;
         font-size: 16px;
+    }
+    #offers{
+        padding: 10vh 0;
+        height: auto;
+    }
+    #offers .cardSec .card{ 
+        width: 250px;
+        padding: 10px;
+        margin: 10px 5px;
     }
   
 }
