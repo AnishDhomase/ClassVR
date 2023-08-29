@@ -419,10 +419,13 @@ nav .navBtnDiv i{
     }
     #g1 .rhs h3{
         font-size: 18px;
- 
-    
     }
-  
+    #offers .heads h1 span{
+        display: none;
+    }
+    #g1 .rhs h1 span{
+        display: none;
+    }
 }
 
 @media screen and (max-width:650px){
