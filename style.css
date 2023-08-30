@@ -242,6 +242,7 @@ nav .navBtnDiv i{
 #g1 .lhs{
     width: 50%;
     text-align: center;
+
 }
 #g1 .lhs img{
     width: 70%;
@@ -249,8 +250,6 @@ nav .navBtnDiv i{
 }
 #g1 .rhs{
     width: 50%;
-
-
 }
 #g1 .rhs h1{
     font-size: 40px;
@@ -459,6 +458,24 @@ nav .navBtnDiv i{
     section, nav{
         scroll-snap-align: start;
         scroll-snap-stop: always;
+    }
+    #g1 .lhs{
+        width: 40%;
+        text-align: end;
+    
+    }
+    #g1 .lhs img{
+       margin-right: 40px;
+    
+    }
+    #g2 .lhs{
+        width: 40%;
+        text-align: end;
+    
+    }
+    #g2 .lhs img{
+       margin-right: 40px;
+    
     }
 }
 @media screen and (max-width:1000px){
