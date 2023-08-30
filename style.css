@@ -605,6 +605,7 @@ footer div#down{
 
 
 @media screen and (min-width:1000px){
+    
     html{
         scroll-snap-type: y mandatory;
     }
@@ -632,6 +633,9 @@ footer div#down{
     }
 }
 @media screen and (max-width:1000px){
+    #fast-scroll{
+        display: none;
+    }
     #home .rhs h1{
         font-size: 45px;
     }
