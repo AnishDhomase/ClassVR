@@ -4,6 +4,9 @@
   
 
 /* Global settings */
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
     font-family: sans-serif;
@@ -147,10 +150,15 @@ nav .navBtnDiv i{
     margin-right: 10px;
     font-weight: 700;
 }
+#home .rhs .quicks a:hover{
+   opacity: 0.7;
+}
 #home .rhs .quicks a:first-child{
     border: 3px solid rgb(187, 184, 184);
     background-color: antiquewhite;
     color: rgb(47, 46, 46);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(209, 183, 237);
 }
 
 
@@ -272,6 +280,93 @@ nav .navBtnDiv i{
     position: absolute;
     bottom: 0;
 }
+
+
+
+/* subjects section */
+#subjects{
+    padding: 12vh 0;
+}
+#subjects .heads h1 {
+    text-align: center;
+   font-size: 40px;
+   font-weight: 700;
+}
+#subjects .heads h1 span{
+    text-align: start;
+    vertical-align: middle;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    border: 3px solid rgb(187, 184, 184);
+    background-color: rgb(109, 107, 105);
+    border-radius: 40px;
+    position: relative;
+    padding: 15px;
+}
+#subjects .heads h1 span img{
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}
+#subjects .cardSec{
+    padding: 7vh 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#subjects .cardSec .card{ 
+    width: 300px;
+    border: 1px solid rgb(143, 141, 141);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 15px;
+    margin: 15px 15px;
+}
+#subjects .cardSec .card:hover{ 
+    box-shadow: 5px 5px 10px 2px rgb(240, 240, 240,0.3), -5px -5px 10px 2px rgb(240, 240, 240,0.3);
+}
+#subjects .cardSec .card h2{ 
+    font-size: 19px;
+    font-weight: 900;
+    justify-content: center;
+    margin-top: 8px;
+}
+#subjects .cardSec .card h4{ 
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(193, 188, 188);
+}
+#subjects .cardSec .card img{ 
+    width: 100%;
+    border-radius: 10px;
+}
+#subjects .cardSec .card .foot{
+    margin-top: 30px;
+    margin-top: 10px;
+}
+#subjects .cardSec .card .foot a{
+    font-size: 13px;
+    padding: 7px 12px;
+    margin-right:3px;
+    font-weight: 500;
+    border-radius: 12px;
+    color: rgb(141, 140, 140);
+}
+#subjects .cardSec .card .foot a:hover{
+    opacity: 0.7;
+}
+#subjects .cardSec .card .foot a I{
+    color: rgb(200, 171, 11);
+}
+#subjects .cardSec .card .foot a:first-child{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(209, 183, 237);
+    color: black;
+}
+
+
 
 
 /* animations */
@@ -426,11 +521,17 @@ nav .navBtnDiv i{
     #g1 .rhs h1 span{
         display: none;
     }
+    #subjects .heads h1 span{
+        display: none;
+    }
 }
 
 @media screen and (max-width:650px){
     #home .lhs{
        width: 70%;
+    }
+    #subjects .heads h1 {
+       font-size: 36px;
     }
 
   
@@ -473,5 +574,14 @@ nav .navBtnDiv i{
     #home{
         margin-bottom: 100px;
     }
+    #subjects .heads h1 {
+        font-size: 30px;
+    }
+    #subjects .cardSec .card{ 
+        width: 290px;
+    
+        margin: 20px 15px;
+    }
+ 
   
 }
