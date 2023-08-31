@@ -51,14 +51,16 @@ section.secWithHeight{
 /* Fast Scroller */
 #fast-scroll img{
     height: 55px;
-    background-color: rgb(40, 40, 86,0.9);
-    border-radius: 10px;
+    border-radius: 50%;
     position: fixed;
     bottom: 20px;
     right: 20px;
+    scale: 0.85;
 }
 #fast-scroll img:hover {
-    border: 3px solid rgb(46, 64, 67);
+    opacity: 0.8;
+    background-color: white;
+    scale: 0.95;
 }
 
 /* navbar */
@@ -83,6 +85,9 @@ nav .navBtnDiv a#navDiff{
 }
 nav .navBtnDiv a{
     margin-left: 19px;
+}
+nav .navBtnDiv a:hover{
+    opacity: 0.8;
 }
 nav .navBtnDiv i{
     display: none;
@@ -193,6 +198,8 @@ nav .navBtnDiv i:hover{
     border: 2px solid rgb(255, 255, 255);
     background-color: rgb(209, 183, 237);
 }
+
+
 
 
 
