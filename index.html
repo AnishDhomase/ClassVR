@@ -6,7 +6,8 @@
     <title>ClassVR | Learn with VR</title>
     <link rel="icon" href="puzzle.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -17,6 +18,7 @@
         <!-- Preloader -->
         <div id="preloader"></div>
 
+        <!-- wrapper -->
         <div id="wrapper" class="remove">
         <!-- navbar -->
         <nav id="navbar">
@@ -228,7 +230,7 @@
         
         </div>
 
-
+        <!-- Modal -->
         <div id="modal" class="remove">
             <div>
                 <i class="fa-solid fa-xmark"></i>
@@ -241,25 +243,15 @@
         
         </div>
 
+        <!-- AOS cdn -->
+        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            
+        </script>
 
         <script src="script.js"></script>
         <!-- Font awesome cdn -->
         <script src="https://kit.fontawesome.com/36329582a6.js" crossorigin="anonymous"></script>
-
-        <!-- AOS cdn -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init({
-          
-            offset: 120, // offset (in px) from the original trigger point
-            delay: 100, // values from 0 to 3000, with step 50ms
-            duration: 600, // values from 0 to 3000, with step 50ms
-            easing: 'ease', // default easing for AOS animations
-            once: false, // whether animation should happen only once - while scrolling down
-            mirror: true, // whether elements should animate out while scrolling past them
-            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-            });
-        </script>
 </body>
 </html>
