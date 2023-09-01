@@ -70,7 +70,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 5vh 9vw;
-    background-color: rgb(214, 169, 255,0.08);
+    background-color: rgba(130, 89, 168, 0.08);
 }
 nav .logo{
     font-size: 35px;
@@ -88,6 +88,7 @@ nav .navBtnDiv a{
 }
 nav .navBtnDiv a:hover{
     opacity: 0.8;
+    
 }
 nav .navBtnDiv i{
     display: none;
@@ -97,6 +98,7 @@ nav .navBtnDiv i{
 nav .navBtnDiv i:hover{
     cursor: pointer;
     color: white;
+    
 }
 
 
@@ -180,7 +182,7 @@ nav .navBtnDiv i:hover{
     margin-top: 30px;
 }
 #home .rhs .quicks a{
-    border: 3px solid rgb(187, 184, 184);
+    border: 2px solid rgb(187, 184, 184);
     background-color: transparent;
     color: antiquewhite;
     border-radius: 40px;
@@ -189,14 +191,20 @@ nav .navBtnDiv i:hover{
     font-weight: 700;
 }
 #home .rhs .quicks a:hover{
-   opacity: 0.7;
-}
-#home .rhs .quicks a:first-child{
-    border: 3px solid rgb(187, 184, 184);
-    background-color: antiquewhite;
     color: rgb(47, 46, 46);
     border: 2px solid rgb(255, 255, 255);
     background-color: rgb(209, 183, 237);
+}
+#home .rhs .quicks a:first-child{
+
+    color: rgb(47, 46, 46);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(209, 183, 237);
+}
+#home .rhs .quicks a:first-child:hover{
+    border: 2px solid rgb(187, 184, 184);
+    background-color: transparent;
+    color: antiquewhite;
 }
 
 
@@ -246,13 +254,15 @@ nav .navBtnDiv i:hover{
 }
 #offers .cardSec .card{ 
     width: 200px;
-    border: 1px solid rgb(143, 141, 141);
     border-radius: 10px;
     padding: 10px;
     margin: 15px 15px;
+    /* border: 1px solid rgb(143, 141, 141); */
+    border: 1px solid rgb(143, 141, 141,0.5);
+    background-color: rgb(171, 187, 181,0.15);
 }
 #offers .cardSec .card:hover{ 
-    background-color: rgb(220, 230, 238, 0.1);
+    /* background-color: rgb(220, 230, 238, 0.1); */
 }
 #offers .cardSec .card h2{ 
     font-size: 19px;
@@ -357,16 +367,14 @@ nav .navBtnDiv i:hover{
 }
 #subjects .cardSec .card{ 
     width: 300px;
-    border: 1px solid rgb(143, 141, 141);
+    border: 1px solid rgb(143, 141, 141,0.5);
+    background-color: rgb(171, 187, 181,0.15);
     border-radius: 10px;
     padding: 10px;
     padding-bottom: 15px;
     margin: 15px 15px;
 }
-#subjects .cardSec .card:hover{ 
-    background-color: rgb(220, 230, 238, 0.1);
 
-}
 #subjects .cardSec .card h2{ 
     font-size: 19px;
     font-weight: 900;
@@ -392,19 +400,22 @@ nav .navBtnDiv i:hover{
     padding: 7px 12px;
     margin-right:3px;
     font-weight: 500;
-    border-radius: 12px;
+    border-radius: 25px;
     color: rgb(141, 140, 140);
 }
-#subjects .cardSec .card .foot a:hover{
-    opacity: 0.7;
-}
-#subjects .cardSec .card .foot a I{
+#subjects .cardSec .card .foot a i{
     color: rgb(200, 171, 11);
 }
 #subjects .cardSec .card .foot a:first-child{
     border: 2px solid rgb(255, 255, 255);
     background-color: rgb(209, 183, 237);
     color: black;
+    position: relative;
+}
+#subjects .cardSec .card .foot a:first-child:hover{
+    border: 2px solid rgb(187, 184, 184);
+    background-color: transparent;
+    color: antiquewhite;
 }
 
 
@@ -508,12 +519,14 @@ nav .navBtnDiv i:hover{
 }
 #join .down #boxForm{
     margin-top: 40px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 20px;
     padding: 5vh 5vw;
+    border: 1px solid rgb(143, 141, 141,0.5);
+    background-color: rgb(171, 187, 181,0.15);
 }
 #join .down #boxForm:hover{
-    background-color: rgb(220, 230, 238, 0.1);
+    /* background-color: rgb(220, 230, 238, 0.1); */
 }
 #join .down #boxForm h1{
     font-size: 40px;
@@ -528,29 +541,29 @@ nav .navBtnDiv i:hover{
     max-width: 300px;
     height: 30px;
     margin-top: 15px;
-    border-radius: 20px;
+    border-radius: 2px;
     padding: 15px 20px;
     font-size: 18px;
     font-weight: 100;
-    color: black;
+    color: rgb(226, 209, 209);
     border: 2px solid rgb(255, 255, 255);
-    background-color: rgb(230, 209, 255);
+    background-color: transparent;
 
 
 }
 #join .down #boxForm form button{
-    padding: 10px 20px;
+    padding: 8px 17px;
     color: black;
-    border-radius: 20px;
+    border-radius: 2px;
     margin-top: 20px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 700;
     border: 2px solid white;
     background-color: white;
 }
 #join .down #boxForm form button:hover{
-   background-color: rgb(244, 223, 255);
    cursor: pointer;
+   scale: 0.95;
 }
 
 
@@ -588,6 +601,9 @@ footer #up span#social div a{
 footer #up span#social div a i{ 
     font-size: 25px;
     color: rgb(144, 14, 225);
+}
+footer #up span#social div a i:hover{ 
+    scale: 1.1;
 }
 footer div#down{
     display: flex;
@@ -630,8 +646,8 @@ footer div#down{
     margin: 9px 0;
     /* border: 3px solid rgba(194, 194, 215, 0.3); */
     background-color: transparent;
-    padding: 5px 15px;
-    border-radius: 30px;
+    padding: 5px 20px;
+    border-radius: 3px;
     position: relative;
     transition: all 0.3s ease;
 
@@ -647,11 +663,13 @@ footer div#down{
    width: 0%;
    height: 100%;
    border-radius: 30px;
+   border-radius: 3px;
+
    z-index: -1;
     transition: width 0.3s ease;
 }
 #modal div a:hover::before{
-    background-color: rgba(191, 196, 218, 0.5);
+    background-color: rgba(191, 196, 218, 0.2);
     width: 100%;
 }
 #modal div a::after{
@@ -662,11 +680,13 @@ footer div#down{
    width: 0%;
    height: 100%;
    border-radius: 30px;
+   border-radius: 3px;
+
    z-index: -1;
     transition: width 0.3s ease;
 }
 #modal div a:hover::after{
-    background-color: rgba(191, 196, 218, 0.5);
+    background-color: rgba(191, 196, 218, 0.2);
     width: 100%;
 }
 #modal div i{
@@ -1056,7 +1076,6 @@ footer div#down{
     }
     #join .down #boxForm{
         margin-top: 40px;
-        border: 1px solid white;
         border-radius: 20px;
         padding: 2.5vh 2.5vw;
         margin: 10px 20px;
